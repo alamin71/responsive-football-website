@@ -9,3 +9,280 @@ width:fit-content;
     padding: 42px 156px;
     margin-bottom: 50px;
 }
+.football-blog{
+display: flex;
+justify-content: space-between;
+}
+.login{
+    background-color: #E02C6D;
+    padding: 10px 24px;
+}
+.login-text{
+    margin: 0 8px;
+    font-size: 16px;
+}
+nav{
+    display: flex;
+   justify-content:space-between;
+   border: 50px;
+}
+nav a{
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 36px;
+    color:#FFFFFF ;
+}
+.web-info{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+align-items: center;
+}
+.web-title{
+    width: 278px;
+    height: 138px;
+    font-size: 36px;
+    color:#FFFFFF;
+}
+web-title a{
+    background-color: #E02C6D;
+}
+.watch-live{
+    color:#FFFFFF ;
+  background-color: #E02C6D;
+  padding:10px 26px;
+}
+.watch-live a{
+    color:#FFFFFF ;
+    text-decoration: none;
+    font-weight: 700px;
+ }
+  .watch-live-text{
+    margin: 0 8px;
+    font-weight: 700px;
+    }
+.banner img{
+    width: 556.01px;
+    height: 438px;
+}
+.container:hover .banner img{
+   transition: width 1s linear;
+   width: 600px;
+}
+/*-----------------
+player album styles 
+------------------*/
+
+.football-team{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  grid-row-gap:30px ;
+  grid-column-gap:30px ;
+   padding: 42px 156px;
+}
+.player-album{
+    width: 302px;
+    height: 474px;
+    padding: 15px 15px 15px 15px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+.player-album .photo img{
+    width: 300px;
+   height: 256px;
+}
+.player-album:hover .photo img{
+    transform: scale(1.2);
+    transition: transform 3s ease-in-out;
+    overflow: hidden;
+}
+.player-bio{
+    font-size: 16px;
+   align-items: center;
+}
+/* --------------------
+head-line-article styles 
+-----------------------*/
+.head-line-article{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap:66px;
+    padding: 42px 156px;
+}
+.head-line-image img{
+    width: 528px;
+    height: 417px;
+}
+.summary{
+    width: 469px;
+    height: 309px;
+   margin-top: 25px;
+}
+.summary-headline{
+    font-size: 48px;
+    font-weight: 700px;
+}
+.headline-detail{
+    font-size: 16px;
+    font-weight: 28px;
+}
+/* ----------------
+video-gallery-styles
+---------------- */
+.video-container{
+    background-color:rgba(219, 188, 188, 0.15);
+}
+.video-gallery{
+    padding: 30px 156px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  
+}
+.video-title{
+    text-decoration:underline;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    font-size: 40px;
+}
+.one{
+    padding-right: 6.5px; 
+}
+/* footer-section */   
+/* footer-styles */
+.footer-section{
+     display:flex;
+      flex-direction:column;
+     align-items: center; 
+}
+.logo img{
+    width: 483.87px;
+    height: 110px;
+}
+.icon img{
+    width: 50px;
+    height: 30px;
+}
+.copyright-text{
+    font-size: 18px;
+    font-weight: 400px;
+}
+/*------------------------- 
+media-Quary-responsive-styles
+-------------------------- */
+}
+@media only screen and (max-width: 360px) {
+    /* for mobile small device */
+ .web-info{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+ }
+ .football-team{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.video-gallery{
+    padding: 30px 156px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);  
+}
+.head-line-article{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap:66px;
+    padding: 42px 156px;
+}
+   .video-container{
+    background-color:rgba(219, 188, 188, 0.15);
+    width: fit-content;
+}
+.video-title{
+    text-decoration:underline;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+}
+@media only screen and (min-width: 361px){
+    /* -----------------
+    for ipads,tablets
+    ------------------- */
+     .web-info{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+     }
+     .football-team{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .video-gallery{
+        padding: 30px 156px;
+        margin-bottom: 30px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);  
+    }
+    .head-line-article{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap:66px;
+        padding: 42px 156px;
+    }
+    .video-container{
+        background-color:rgba(219, 188, 188, 0.15);
+        width: fit-content;
+    }
+    .video-title{
+        text-decoration:underline;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+    }
+}
+    @media only screen and (min-width: 768px){
+        /* -----------------
+        for laptop,desktop
+        ------------------- */
+        .web-info{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            }
+            .football-team{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+              grid-row-gap:30px ;
+              grid-column-gap:30px ;
+               padding: 42px 156px;
+            }
+            .video-gallery{
+                padding: 30px 156px;
+                margin-bottom: 30px;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);  
+            }
+            .head-line-article{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-column-gap:66px;
+                padding: 42px 156px;
+            }
+            .video-container{
+                background-color:rgba(219, 188, 188, 0.15);
+            }
+            .video-title{
+                text-decoration:underline;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 20px;
+                font-size: 40px;
+            }
+        
+        }
+ 
+/* styles end */
